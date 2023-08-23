@@ -47,6 +47,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 .header__input-block {
   display: flex;
@@ -97,12 +98,10 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
-  width: 103px;
 }
 .header__login-button, .header__compare-button, .header__cart-button {
   border: none;
   height: 30px;
-  width: 54px;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 400;

@@ -18,6 +18,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
   }
 
   &__input-block {
@@ -70,14 +71,12 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    width: 103px;
 }
 
 
 &__login-button,&__compare-button, &__cart-button  {
     border: none;
     height: 30px;
-    width: 54px;
 
     @include font($size: 1.8rem, $height: 3.0rem, $weight: 400)
   }
