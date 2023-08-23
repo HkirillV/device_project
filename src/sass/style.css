@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "Rubik", sans-serif;
+  src: url("/src/fonts/Rubik-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik", sans-serif;
+  src: url("/src/fonts/Rubik-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway", sans-serif;
+  src: url("/src/fonts/Raleway-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Rubik", "Raleway", sans-serif;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.header__block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+.header__logo {
+  display: inline-block;
+  opacity: 0.75;
+  height: 36px;
+}
+.header__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__input-block {
+  display: flex;
+  align-items: center;
+  width: 359px;
+  height: 40px;
+  padding-left: 16px;
+  gap: 16px;
+  border-radius: 50px 0 0 50px;
+  border: 2px solid #000;
+  border-right: none;
+  background: rgba(255, 255, 255, 0);
+}
+.header__search {
+  border: none;
+  color: #000;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+}
+.header__search-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  padding: 0 10px 0 10px;
+  height: 40px;
+  border-radius: 0 50px 50px 0;
+  border: 2px solid #000;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+}
+.header__login {
+  display: flex;
+  align-items: center;
+  width: 231px;
+  gap: 12px;
+}
+.header__menu {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+.header__compare, .header__cart {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 103px;
+}
+.header__login-button, .header__compare-button, .header__cart-button {
+  border: none;
+  height: 30px;
+  width: 54px;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3rem;
+}
+
+/*# sourceMappingURL=style.css.map */
