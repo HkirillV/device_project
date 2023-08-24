@@ -1,11 +1,22 @@
 .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 175px;
+  background: $color-yellow;
+
 
 
   &__block {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 30px;
+    position: absolute;
+    max-width: 1040px;
+    width: 100%;
+    top: -20px;
+    row-gap: 30px;
   }
 
   &__logo {
@@ -21,21 +32,25 @@
     width: 100%;
   }
 
-  &__input-block {
+  &__icons-search {
+    position: absolute;
+    transform: translateX(60%);
+  }
+
+  &__search-form {
     display: flex;
     align-items: center;
-    width: 359px;
+    position: relative;
+    flex-shrink: 0;
+  }
+
+  &__search {
     height: 40px;
-    padding-left: 16px;
-    gap: 16px;
+    padding: 10px 140px 10px 35px;
     border-radius: 50px 0 0 50px;
     border: 2px solid #000;
     border-right: none;
     background: rgba(255, 255, 255, 0.00);
-  }
-
-  &__search {
-    border: none;
     color: $color-black;
 
     @include font($size: 1.6rem, $height: 2.0rem, $weight: 400)
@@ -45,8 +60,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 160px;
-    padding: 0 10px 0 10px;
+    padding: 10px 56px 10px 56px;
     height: 40px;
     border-radius: 0 50px 50px 0;
     border: 2px solid #000;
@@ -57,13 +71,16 @@
   &__login {
     display: flex;
     align-items: center;
-    width: 231px;
+    max-width: 231px;
+    width: 100%;
+    flex-shrink: 0;
     gap: 12px;
   }
 
   &__menu {
     display: flex;
     align-items: center;
+    position: relative;
     gap: 36px;
   }
 
@@ -74,11 +91,33 @@
 }
 
 
-&__login-button,&__compare-button, &__cart-button  {
+  &__login-button,&__compare-button, &__cart-button  {
     border: none;
     height: 30px;
 
     @include font($size: 1.8rem, $height: 3.0rem, $weight: 400)
+  }
+
+
+  &__cart-figure {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    right: 93px;
+    background: $color-white;
+    color: $color-black;
+    max-width: 21px;
+    width: 100%;
+    height: 21px;
+    border-radius: 10px;
+
+    @include font($size: 1.4rem, $height: normal, $weight: 400)
+  }
+
+  &__catalog {
+    display: flex;
   }
 
 }
