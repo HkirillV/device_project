@@ -10,8 +10,8 @@
   <title>Device | Главная</title>
 </head>
 <body>
-<header class="header container">
-  <div class="header__block">
+<header class="header">
+  <div class="header__block container">
     <a class="header__logo" href="./index.html">
       <img src="./img/logo.svg" width="145" height="36" loading="lazy" alt="logo">
     </a>
@@ -76,18 +76,14 @@
       </div>
     </nav>
     <div class="header__catalog">
-      <div class="header__catalog-heading">
-        <span class="header__catalog-title">КАТАЛОГ ТОВАРОВ</span>
-      </div>
       <div class="header__catalog-toggler">
-        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-          <circle opacity="0.3" cx="25" cy="25" r="24" stroke="black" stroke-width="2"/>
-        </svg>
+        <button type="button" class="header__catalog-title">КАТАЛОГ ТОВАРОВ</button>
+        <img class="header__catalog-icons" src="./img/header/icon-ellipse.svg" width="50" height="50" loading="lazy" alt="icon-ellipse">
       </div>
       <div class="header__catalog-menu">
-        <span class="header__catalog-title">ДОСТАВКА</span>
-        <span class="header__catalog-title">ГАРАНТИЯ</span>
-        <span class="header__catalog-title">КОНТАКТЫ</span>
+        <button type="button" class="header__catalog-title">ДОСТАВКА</button>
+        <button type="button" class="header__catalog-title">ГАРАНТИЯ</button>
+        <button type="button" class="header__catalog-title">КОНТАКТЫ</button>
       </div>
     </div>
   </div>
