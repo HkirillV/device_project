@@ -13,9 +13,9 @@
 <header class="header">
   <div class="header__block container">
     <a class="header__logo" href="./index.html">
-      <img src="./img/logo.svg" width="145" height="36" loading="lazy" alt="logo">
+      <img class="header__logo-icon" src="./img/logo.svg" width="145" height="36" loading="lazy" alt="logo">
     </a>
-    <nav class="header__navigation">
+    <div class="header__navigation">
       <form class="header__search-form" action="./index.html" method="post">
         <svg class="header__icons-search" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
              fill="none">
@@ -29,63 +29,82 @@
             </clipPath>
           </defs>
         </svg>
-        <input class="header__search" type="text" placeholder="Поиск по сайту">
-        <button class="header__search-button" type="button">Найти</button>
+        <input class="header__search" type="search" placeholder="Поиск по сайту">
+        <button class="header__search-button" type="submit">Найти</button>
       </form>
       <div class="header__login">
-        <svg class="header__login-icons" xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12"
-             fill="none">
-          <path d="M1 12H14C13.8 9.4 11.9 7.2 9.3 6.5C10.3 5.9 11 4.8 11 3.5C11 1.6 9.4 0 7.5 0C5.6 0 4 1.6 4 3.5C4 4.8 4.7 5.9 5.7 6.5C3.1 7.2 1.2 9.4 1 12Z"
-                fill="black"/>
-        </svg>
-        <button class="header__login-button" type="button">Войти</button>
+        <button class="header__login-button" type="button">
+          <svg class="header__login-icons" xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12"
+               fill="none">
+            <path d="M1 12H14C13.8 9.4 11.9 7.2 9.3 6.5C10.3 5.9 11 4.8 11 3.5C11 1.6 9.4 0 7.5 0C5.6 0 4 1.6 4 3.5C4 4.8 4.7 5.9 5.7 6.5C3.1 7.2 1.2 9.4 1 12Z"
+                  fill="black"/>
+          </svg>
+          Войти
+        </button>
       </div>
       <div class="header__menu">
         <div class="header__compare">
-          <svg class="header__compare-icons" xmlns="http://www.w3.org/2000/svg" width="10" height="12"
-               viewBox="0 0 10 12" fill="none">
-            <g clip-path="url(#clip0_1_1021)">
-              <path d="M6 0H4V12H6V0Z" fill="black"/>
-              <path d="M2 4H0V12H2V4Z" fill="black"/>
-              <path d="M10 3H8V12H10V3Z" fill="black"/>
-            </g>
-            <defs>
-              <clipPath id="clip0_1_1021">
-                <rect width="10" height="12" fill="white"/>
-              </clipPath>
-            </defs>
-          </svg>
-          <button class="header__compare-button" type="button">Сравнить</button>
+          <button class="header__compare-button" type="button">
+            <svg class="header__compare-icons" xmlns="http://www.w3.org/2000/svg" width="10" height="12"
+                 viewBox="0 0 10 12" fill="none">
+              <g clip-path="url(#clip0_1_1021)">
+                <path d="M6 0H4V12H6V0Z" fill="black"/>
+                <path d="M2 4H0V12H2V4Z" fill="black"/>
+                <path d="M10 3H8V12H10V3Z" fill="black"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_1_1021">
+                  <rect width="10" height="12" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+            Сравнить
+          </button>
         </div>
         <div class="header__cart">
-          <span class="header__cart-figure">2</span>
-          <svg class="header__cart-icons" xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"
-               fill="none">
-            <g clip-path="url(#clip0_1_1027)">
-              <path d="M15.3 5L11.8 5.2L8.6 0.3C8.5 0.1 8.2 0 8 0C7.8 0 7.5 0.1 7.4 0.3L4.2 5.2H0.7C0.3 5.2 0 5.5 0 5.9C0 6 0 6 0 6.1L1.9 12.9C2.1 13.6 2.6 14 3.3 14H12.7C13.4 14 13.9 13.6 14.1 12.9L16 6C16 5.9 16 5.9 16 5.8C16 5.4 15.7 5 15.3 5ZM8 1.9L10.2 5.1H5.9L8 1.9Z"
-                    fill="black"/>
+          <button class="header__cart-button" type="button">
+            <span class="header__cart-figure">2</span>
+            <svg class="header__cart-icons" xmlns="http://www.w3.org/2000/svg" width="16" height="14"
+                 viewBox="0 0 16 14"
+                 fill="none">
+              <g clip-path="url(#clip0_1_1027)">
+                <path d="M15.3 5L11.8 5.2L8.6 0.3C8.5 0.1 8.2 0 8 0C7.8 0 7.5 0.1 7.4 0.3L4.2 5.2H0.7C0.3 5.2 0 5.5 0 5.9C0 6 0 6 0 6.1L1.9 12.9C2.1 13.6 2.6 14 3.3 14H12.7C13.4 14 13.9 13.6 14.1 12.9L16 6C16 5.9 16 5.9 16 5.8C16 5.4 15.7 5 15.3 5ZM8 1.9L10.2 5.1H5.9L8 1.9Z"
+                      fill="black"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_1_1027">
+                  <rect width="16" height="14" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+            Корзина
+          </button>
+        </div>
+      </div>
+    </div>
+    <nav class="header__catalog">
+      <div class="header__catalog-toggler">
+        <button class="header__catalog-title" type="button">КАТАЛОГ ТОВАРОВ</button>
+        <button class="header__catalog-button" type="button">
+          <svg class="header__catalog-icons" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+               viewBox="0 0 16 16" fill="none">
+            <g opacity="0.3" clip-path="url(#clip0_47075_980)">
+              <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black"/>
             </g>
             <defs>
-              <clipPath id="clip0_1_1027">
-                <rect width="16" height="14" fill="white"/>
+              <clipPath id="clip0_47075_980">
+                <rect width="16" height="16" fill="white"/>
               </clipPath>
             </defs>
           </svg>
-          <button class="header__cart-button" type="button">Корзина</button>
-        </div>
-      </div>
-    </nav>
-    <div class="header__catalog">
-      <div class="header__catalog-toggler">
-        <button type="button" class="header__catalog-title">КАТАЛОГ ТОВАРОВ</button>
-        <img class="header__catalog-icons" src="./img/header/icon-ellipse.svg" width="50" height="50" loading="lazy" alt="icon-ellipse">
+        </button>
       </div>
       <div class="header__catalog-menu">
-        <button type="button" class="header__catalog-title">ДОСТАВКА</button>
-        <button type="button" class="header__catalog-title">ГАРАНТИЯ</button>
-        <button type="button" class="header__catalog-title">КОНТАКТЫ</button>
+        <a class="header__catalog-title" href="./index.html">ДОСТАВКА</a>
+        <a class="header__catalog-title" href="./index.html">ГАРАНТИЯ</a>
+        <a class="header__catalog-title" href="./index.html">КОНТАКТЫ</a>
       </div>
-    </div>
+    </nav>
   </div>
 </header>
 </body>

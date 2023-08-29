@@ -2,20 +2,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  min-height: 250px;
-  background: $color-yellow;
-
+  padding-top: 40px;
+  padding-bottom: 100px;
+  background: linear-gradient(to bottom, transparent 60px, $color-yellow 40px);
 
 
   &__block {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    position: absolute;
     max-width: 1040px;
     width: 100%;
-    top: -20px;
     row-gap: 30px;
   }
 
@@ -39,7 +36,9 @@
 
   &__icons-search {
     position: absolute;
-    transform: translateX(60%);
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
   }
 
   &__search-form {
@@ -70,7 +69,7 @@
     max-width: 359px;
     width: 100%;
     height: 40px;
-    padding: 10px 140px 10px 35px;
+    padding: 10px 14px 10px 35px;
     border-radius: 50px 0 0 50px;
     border: 2px solid #000;
     border-right: none;
@@ -78,17 +77,13 @@
     color: $color-black;
 
     @include font($size: 1.6rem, $height: 2.0rem, $weight: 400);
-
-    @include media-tablet {
-      padding: 10px 35px 10px 35px;
-    }
   }
 
   &__search-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 56px 10px 56px;
+    padding: 0 56px 0 56px;
     height: 40px;
     border-radius: 0 50px 50px 0;
     border: 2px solid #000;
@@ -96,7 +91,7 @@
     @include font($size: 1.6rem, $height: 2.0rem, $weight: 400);
 
     @include media-laptop {
-      padding: 10px 30px 10px 30px;
+      padding: 0 30px 0 30px;
     }
   }
 
@@ -107,7 +102,6 @@
     max-width: 205px;
     width: 100%;
     flex-shrink: 0;
-    gap: 12px;
 
     @include media-laptop {
       max-width: 130px;
@@ -123,7 +117,6 @@
   &__menu {
     display: flex;
     align-items: center;
-    position: relative;
     gap: 36px;
 
     @include media-mobile {
@@ -132,9 +125,10 @@
 
   }
 
-  &__compare, &__cart {
+  &__cart {
     display: flex;
     align-items: center;
+    position: relative;
     gap: 12px;
 }
 
@@ -153,7 +147,7 @@
     flex-direction: column;
     text-align: center;
     position: absolute;
-    right: 93px;
+    right: 85px;
     background: $color-white;
     color: $color-black;
     max-width: 21px;
@@ -182,6 +176,14 @@
     align-items: center;
     height: 50px;
     gap: 7px;
+  }
+
+  &__catalog-button {
+    border: 0.1875em solid $color-black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    opacity: 0.3;
   }
 
   &__catalog-title {
