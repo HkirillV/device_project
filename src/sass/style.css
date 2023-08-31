@@ -27,10 +27,6 @@ body {
   font-family: "Rubik", "Raleway", sans-serif;
 }
 
-button {
-  opacity: 0.75;
-}
-
 input[type=text]::-ms-clear {
   display: none;
   width: 0;
@@ -81,9 +77,83 @@ input[type=search]::-webkit-search-results-decoration {
   margin-inline: auto;
 }
 
-.header__berger-icon {
+.header__burger-button {
+  position: relative;
+  z-index: 1;
   height: 30px;
   width: 30px;
+}
+.header__burger-button.is-active svg {
+  rotate: -90deg;
+}
+.header__burger-button.is-active svg {
+  transition: 0.2s;
+}
+
+.overlay-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+.overlay-menu:not(.is-active) {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(100%);
+}
+.overlay-menu__inner {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100%;
+  padding: 100px 15px 20px 15px;
+  background-color: #FFF5EE;
+}
+.overlay-menu__form {
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 517px;
+  width: 100%;
+}
+.overlay-menu__icons-search {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+.overlay-menu__search {
+  max-width: 230px;
+  width: 100%;
+  height: 40px;
+  padding: 10px 10px 10px 35px;
+  border-radius: 50px 0 0 50px;
+  border: 2px solid #000;
+  border-right: none;
+  background: rgba(255, 255, 255, 0);
+  color: #000;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+}
+.overlay-menu__search-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px 0 30px;
+  height: 40px;
+  border-radius: 0 50px 50px 0;
+  border: 2px solid #000;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
 }
 
 .header {
@@ -264,7 +334,6 @@ input[type=search]::-webkit-search-results-decoration {
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  opacity: 0.3;
 }
 .header__catalog-title {
   color: #000;
@@ -276,7 +345,7 @@ input[type=search]::-webkit-search-results-decoration {
 }
 @media (max-width: 640px) {
   .header__catalog-title {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
