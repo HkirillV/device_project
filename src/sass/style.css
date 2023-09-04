@@ -281,6 +281,16 @@ input[type=search]::-webkit-search-results-decoration {
   min-height: 560px;
   background: linear-gradient(to bottom, #FFE17F 150px, transparent 100px);
 }
+
+.image-slider__image {
+  max-width: 100%;
+  text-align: start;
+}
+
+.advantages__preview {
+  position: relative;
+}
+
 .header__burger-button {
   position: relative;
   z-index: 1;

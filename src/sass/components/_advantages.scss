@@ -1,12 +1,17 @@
 .advantages {
   min-height: 560px;
   background: linear-gradient(to bottom, $color-yellow 150px, transparent 100px);
+}
 
-  &__content {
+.image-slider__image {
+  max-width: 100%;
+  text-align: start;
+}
 
-  }
+.image-slider {
 
-  &__quadrocopter-icon {
+}
 
-  }
+.advantages__preview {
+  position: relative;
 }

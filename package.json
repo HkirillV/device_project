@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "swiper": "^10.2.0"
   },
   "scripts": {
     "style": "sass --watch src/sass/style.scss src/sass/style.css",
