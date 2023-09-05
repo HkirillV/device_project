@@ -1,19 +1,19 @@
 @font-face {
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik";
   src: url("/src/fonts/Rubik-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik";
   src: url("/src/fonts/Rubik-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway";
   src: url("/src/fonts/Raleway-ExtraBold.woff2") format("woff2");
   font-weight: 800;
   font-style: normal;
@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  font-family: "Rubik", "Raleway", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 input[type=text]::-ms-clear {
@@ -277,23 +277,72 @@ input[type=search]::-webkit-search-results-decoration {
   gap: 45px;
 }
 
+.button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  color: #000;
+  padding-inline: 25px;
+  height: 40px;
+  transition: 0.3s;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.button::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  transform: translateY(-50%);
+  background-color: #FFE17F;
+  transition: 0.3s;
+}
+.button:hover {
+  color: #FFE17F;
+}
+.button:hover::before {
+  height: 100%;
+  background-color: #000;
+}
+
 .advantages {
-  min-height: 560px;
+  position: relative;
+  --slide-image-size:560px;
+  min-height: var(--slide-image-size);
   background: linear-gradient(to bottom, #FFE17F 150px, transparent 100px);
 }
-
-.image-slider__image {
-  max-width: 100%;
-  text-align: start;
+.advantages__slider-button {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 }
-
-.advantages__preview {
-  position: relative;
+.advantages__slider-button--next {
+  left: calc(var(--slide-image-size) - 20px);
+}
+.advantages__pagination {
+  display: flex;
+  gap: 20px;
+}
+.advantages__pagination-wrapper {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .header__burger-button {
   position: relative;
-  z-index: 1;
+  z-index: 21;
   height: 30px;
   width: 30px;
 }
@@ -313,6 +362,7 @@ input[type=search]::-webkit-search-results-decoration {
 
 .overlay-menu {
   position: fixed;
+  z-index: 20;
   top: 0;
   left: 0;
   width: 100%;
@@ -544,6 +594,75 @@ input[type=search]::-webkit-search-results-decoration {
     font-weight: 800;
     line-height: 3rem;
   }
+}
+
+.characteristic__list {
+  display: flex;
+  gap: 20px;
+}
+.characteristic__item {
+  display: flex;
+  flex-direction: column-reverse;
+  row-gap: 12px;
+}
+.characteristic__key {
+  color: #444;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.characteristic__value {
+  color: #000;
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.popular-product {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 40px;
+}
+.popular-product__image {
+  width: var(--slide-image-size);
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+.popular-product__counter {
+  text-align: right;
+  padding-right: 60px;
+  color: #FFF;
+  font-size: 18rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+}
+.popular-product__title {
+  font-family: "Raleway", sans-serif;
+  margin-top: -65px;
+  color: #000;
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.popular-product__title:not(:last-child) {
+  margin-bottom: 29px;
+}
+.popular-product__description {
+  color: #444;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.popular-product__description:not(:last-child) {
+  margin-bottom: 50px;
+}
+.popular-product__button:not(:last-child) {
+  margin-bottom: 60px;
 }
 
 /*# sourceMappingURL=style.css.map */

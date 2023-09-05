@@ -1,0 +1,25 @@
+.characteristic {
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 12px;
+  }
+
+  &__key {
+    color: $color-text;
+
+    @include font($size: 1.6rem, $height: normal, $weight: 400);
+
+  }
+
+  &__value {
+    color: $color-black;
+
+    @include font($size: 3.6rem, $height: normal, $weight: 400);
+  }
+}

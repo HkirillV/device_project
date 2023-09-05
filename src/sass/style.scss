@@ -3,6 +3,7 @@
 @import "abstract/constants";
 @import "abstract/mixins";
 @import "abstract/placeholders";
+@import "abstract/fonts";
 
 
 //Base
@@ -16,6 +17,10 @@
 
 
 //Components
+@import "components/button";
 @import "components/advantages";
 @import "components/burger";
+@import "components/characteristic";
+@import "components/popular-product";
+
 

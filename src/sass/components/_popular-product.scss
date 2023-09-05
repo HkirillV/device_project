@@ -1,0 +1,46 @@
+.popular-product {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 40px;
+
+  &__image {
+    width: var(--slide-image-size);
+    aspect-ratio: 1;
+    object-fit: contain;
+  }
+
+  &__counter {
+    text-align: right;
+    padding-right: 60px;
+    color: $color-white;
+
+    @include font($size: 18rem, $height: 1, $weight: 700);
+  }
+
+  &__title {
+    font-family: "Raleway",sans-serif;
+    margin-top: -65px;
+    color: $color-black;
+
+    @include font($size: 5rem, $height: normal, $weight: 800);
+
+    &:not(:last-child) {
+      margin-bottom: 29px;
+    }
+  }
+
+  &__description {
+    color: $color-text;
+    @include font($size: 1.8rem, $height: normal, $weight: 400);
+
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__button {
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
+  }
+}
