@@ -11,6 +11,10 @@
 
   @include font($size: 1.8rem, $height: normal, $weight: 800);
 
+  @include media-mobile-xs {
+    @include font($size: 1.4rem, $height: normal, $weight: 800);
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -32,4 +36,5 @@
       background-color: $color-black;
     }
   }
+
 }
