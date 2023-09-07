@@ -82,11 +82,15 @@ input[type=search]::-webkit-search-results-decoration {
   justify-content: center;
   align-items: center;
   padding-top: 40px;
-  background: linear-gradient(to bottom, transparent 60px, #FFE17F 40px);
+}
+.header__content {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom, transparent 20px, #FFE17F 20px);
 }
 @media (max-width: 480px) {
-  .header {
-    background: linear-gradient(to bottom, transparent 57px, #FFE17F 40px);
+  .header__content {
+    background: linear-gradient(to bottom, transparent 15px, #FFE17F 15px);
   }
 }
 .header__block {
@@ -342,6 +346,8 @@ input[type=search]::-webkit-search-results-decoration {
   --slide-image-size:560px;
   margin-bottom: 70px;
   min-height: var(--slide-image-size);
+}
+.advantages__preview {
   background: linear-gradient(to bottom, #FFE17F 150px, transparent 100px);
 }
 .advantages__slider-button--prev {

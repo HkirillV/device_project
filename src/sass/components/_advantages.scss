@@ -3,7 +3,10 @@
   --slide-image-size:560px;
   margin-bottom: 70px;
   min-height: var(--slide-image-size);
-  background: linear-gradient(to bottom, $color-yellow 150px, transparent 100px);
+
+  &__preview {
+    background: linear-gradient(to bottom, $color-yellow 150px, transparent 100px);
+  }
 
   &__slider-button--prev {
     position: absolute;
