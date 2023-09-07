@@ -1,6 +1,7 @@
 .advantages {
   position: relative;
   --slide-image-size:560px;
+  margin-bottom: 70px;
   min-height: var(--slide-image-size);
   background: linear-gradient(to bottom, $color-yellow 150px, transparent 100px);
 

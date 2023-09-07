@@ -1,0 +1,21 @@
+.categories {
+  margin-bottom: 70px;
+
+  &__catalog {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  &__catalog-image {
+    text-align: center;
+    background-color: $color-yellow;
+  }
+
+  &__catalog-text {
+    font-family: "Raleway", sans-serif;
+    color: $color-black;
+
+    @include font($size: 1.8rem, $height: 2.4rem, $weight: 800);
+  }
+}

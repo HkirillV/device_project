@@ -340,6 +340,7 @@ input[type=search]::-webkit-search-results-decoration {
 .advantages {
   position: relative;
   --slide-image-size:560px;
+  margin-bottom: 70px;
   min-height: var(--slide-image-size);
   background: linear-gradient(to bottom, #FFE17F 150px, transparent 100px);
 }
@@ -488,7 +489,7 @@ input[type=search]::-webkit-search-results-decoration {
 }
 @media (max-width: 480px) {
   .overlay-menu__inner {
-    padding: 55px 15px 20px 15px;
+    padding: 45px 15px 20px 15px;
   }
 }
 .overlay-menu__content {
@@ -901,6 +902,27 @@ input[type=search]::-webkit-search-results-decoration {
   .popular-product__button:not(:last-child) {
     margin-bottom: 40px;
   }
+}
+
+.categories {
+  margin-bottom: 70px;
+}
+.categories__catalog {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+.categories__catalog-image {
+  text-align: center;
+  background-color: #FFE17F;
+}
+.categories__catalog-text {
+  font-family: "Raleway", sans-serif;
+  color: #000;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 2.4rem;
 }
 
 /*# sourceMappingURL=style.css.map */
