@@ -343,7 +343,7 @@ input[type=search]::-webkit-search-results-decoration {
   min-height: var(--slide-image-size);
   background: linear-gradient(to bottom, #FFE17F 150px, transparent 100px);
 }
-.advantages__slider-button {
+.advantages__slider-button--prev {
   position: absolute;
   z-index: 10;
   top: 50%;
@@ -351,45 +351,71 @@ input[type=search]::-webkit-search-results-decoration {
   transform: translateY(-50%);
 }
 @media (max-width: 1024px) {
-  .advantages__slider-button {
+  .advantages__slider-button--prev {
     left: 20%;
   }
 }
+@media (max-width: 921px) {
+  .advantages__slider-button--prev {
+    top: 40%;
+    left: 30%;
+  }
+}
 @media (max-width: 768px) {
-  .advantages__slider-button {
+  .advantages__slider-button--prev {
     max-width: 15px;
     min-height: 40px;
   }
 }
 @media (max-width: 640px) {
-  .advantages__slider-button {
+  .advantages__slider-button--prev {
     max-width: 10px;
     min-height: 30px;
-    left: 25%;
-    top: 40%;
   }
 }
-@media (max-width: 921px) {
-  .advantages__slider-button {
-    left: 17%;
+@media (max-width: 480px) {
+  .advantages__slider-button--prev {
+    top: 45%;
   }
 }
 .advantages__slider-button--next {
-  left: calc(var(--slide-image-size) - 20px);
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  right: 50%;
+  transform: translateY(-50%);
+}
+@media (max-width: 1085px) {
+  .advantages__slider-button--next {
+    right: 45%;
+  }
 }
 @media (max-width: 1024px) {
   .advantages__slider-button--next {
-    right: 5%;
+    right: 20%;
+  }
+}
+@media (max-width: 921px) {
+  .advantages__slider-button--next {
+    top: 40%;
+    right: 30%;
+  }
+}
+@media (max-width: 768px) {
+  .advantages__slider-button--next {
+    max-width: 15px;
+    min-height: 40px;
   }
 }
 @media (max-width: 640px) {
   .advantages__slider-button--next {
-    left: calc(var(--slide-image-size) - 160px);
+    max-width: 10px;
+    min-height: 30px;
   }
 }
-@media (max-width: 921px) {
+@media (max-width: 480px) {
   .advantages__slider-button--next {
-    left: calc(var(--slide-image-size) - 280px);
+    top: 45%;
   }
 }
 .advantages__pagination {
@@ -759,17 +785,17 @@ input[type=search]::-webkit-search-results-decoration {
   aspect-ratio: 1;
   object-fit: contain;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .popular-product__image {
     max-width: 500px;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 921px) {
   .popular-product__image {
     max-width: 300px;
   }
 }
-@media (max-width: 921px) {
+@media (max-width: 768px) {
   .popular-product__image {
     max-width: 250px;
   }

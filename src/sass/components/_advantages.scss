@@ -4,7 +4,7 @@
   min-height: var(--slide-image-size);
   background: linear-gradient(to bottom, $color-yellow 150px, transparent 100px);
 
-  &__slider-button {
+  &__slider-button--prev {
     position: absolute;
     z-index: 10;
     top: 50%;
@@ -15,6 +15,11 @@
       left: 20%;
     }
 
+    @include media-max-tablet-xs {
+      top: 40%;
+      left: 30%;
+    }
+
     @include media-mobile {
       max-width: 15px;
       min-height: 40px;
@@ -23,30 +28,47 @@
     @include media-mobile-s {
       max-width: 10px;
       min-height: 30px;
-      left: 25%;
-      top: 40%;
+    }
+
+    @include media-mobile-xs {
+      top: 45%;
+    }
+
+  }
+
+  &__slider-button--next {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    right: 50%;
+    transform: translateY(-50%);
+
+    @include media-tablet-button--next {
+      right: 45%;
+    }
+
+    @include media-tablet-x {
+      right: 20%;
     }
 
     @include media-max-tablet-xs {
-      left: 17%;
+      top: 40%;
+      right: 30%;
     }
 
-    &--next {
-      left: calc(var(--slide-image-size) - 20px);
-
-      @include media-tablet-x {
-        right: 5%;
-      }
-
-      @include media-mobile-s {
-        left: calc(var(--slide-image-size) - 160px);
-      }
-
-      @include media-max-tablet-xs {
-        left: calc(var(--slide-image-size) - 280px);
-      }
+    @include media-mobile {
+      max-width: 15px;
+      min-height: 40px;
     }
 
+    @include media-mobile-s {
+      max-width: 10px;
+      min-height: 30px;
+    }
+
+    @include media-mobile-xs {
+      top: 45%;
+    }
   }
 
   &__pagination {

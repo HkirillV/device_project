@@ -15,15 +15,15 @@
     aspect-ratio: 1;
     object-fit: contain;
 
-    @include media-mobile {
+    @include media-tablet-x {
       max-width: 500px;
     }
 
-    @include media-mobile-s {
+    @include media-max-tablet-xs {
       max-width: 300px;
     }
 
-    @include media-max-tablet-xs {
+    @include media-mobile {
       max-width: 250px;
     }
   }

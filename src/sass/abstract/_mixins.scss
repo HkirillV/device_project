@@ -6,6 +6,10 @@
 }
 
 
+@mixin media-tablet-button--next {
+  @media (max-width: $tablet-button--next) { @content; }
+}
+
 @mixin media-tablet-x {
   @media (max-width: $tablet-x) { @content; }
 }
