@@ -916,10 +916,13 @@ input[type=search]::-webkit-search-results-decoration {
 .categories__catalog {
   display: flex;
   align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 40px;
 }
 .categories__catalog-image {
   text-align: center;
+  margin-bottom: 32px;
   background-color: #FFE17F;
 }
 .categories__catalog-text {
@@ -929,6 +932,51 @@ input[type=search]::-webkit-search-results-decoration {
   font-style: normal;
   font-weight: 800;
   line-height: 2.4rem;
+}
+
+.services {
+  position: relative;
+  z-index: 1;
+  min-height: 391px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 40px, #F0F0F0 15px);
+}
+.services__content {
+  display: flex;
+  align-items: center;
+  gap: 116px;
+}
+.services__item {
+  display: inline-flex;
+  flex-direction: column;
+  row-gap: 35px;
+}
+.services__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 694px;
+  width: 100%;
+}
+.services__description-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 45px;
+}
+.services__title {
+  font-family: "Raleway", sans-serif;
+  color: #000;
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.services__text {
+  color: #444;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 /*# sourceMappingURL=style.css.map */
