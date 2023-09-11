@@ -937,13 +937,12 @@ input[type=search]::-webkit-search-results-decoration {
 .services {
   position: relative;
   z-index: 1;
-  min-height: 391px;
-  height: 100%;
-  background: linear-gradient(to bottom, transparent 40px, #F0F0F0 15px);
+  background: linear-gradient(to bottom, transparent 100px, #F0F0F0 15px);
 }
 .services__content {
   display: flex;
   align-items: center;
+  min-height: 319px;
   gap: 116px;
 }
 .services__item {
@@ -961,7 +960,7 @@ input[type=search]::-webkit-search-results-decoration {
 .services__description-wrapper {
   display: flex;
   flex-direction: column;
-  row-gap: 45px;
+  row-gap: 58px;
 }
 .services__title {
   font-family: "Raleway", sans-serif;

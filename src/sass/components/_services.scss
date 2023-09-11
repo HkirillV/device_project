@@ -1,17 +1,15 @@
 .services {
   position: relative;
   z-index: 1;
-  min-height: 391px;
-  height: 100%;
-  background: linear-gradient(to bottom, transparent 40px, $color-services 15px);
+  background: linear-gradient(to bottom, transparent 100px, $color-services 15px);
 
 
   &__content {
     display: flex;
     align-items: center;
+    min-height: 319px;
     gap: 116px;
   }
-
 
 
   &__item {
@@ -32,7 +30,7 @@
   &__description-wrapper {
     display: flex;
     flex-direction: column;
-    row-gap: 45px;
+    row-gap: 58px;
 
   }
 
