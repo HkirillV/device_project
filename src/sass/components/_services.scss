@@ -1,14 +1,29 @@
 .services {
   position: relative;
   z-index: 1;
+  margin-bottom: 70px;
+  min-height: 391px;
+  height: 100%;
   background: linear-gradient(to bottom, transparent 100px, $color-services 15px);
 
+  @include media-max-tablet-xs {
+    background: linear-gradient(to bottom, transparent 69px, $color-services 15px);
+  }
 
   &__content {
     display: flex;
     align-items: center;
     min-height: 319px;
     gap: 116px;
+
+    @include media-tablet-x {
+      gap: 50px;
+    }
+
+    @include media-max-tablet-xs {
+      flex-direction: column;
+      gap: 30px;
+    }
   }
 
 
@@ -16,6 +31,32 @@
     display: inline-flex;
     flex-direction: column;
     row-gap: 35px;
+    max-width: 280px;
+    width: 100%;
+
+    @include media-tablet-x {
+      max-width: 245px;
+      width: 100%;
+    }
+
+    @include media-max-tablet-xs {
+      row-gap: 10px;
+    }
+  }
+
+  &__button_width {
+    opacity: 0.75;
+    width: 55%;
+
+    @include media-tablet-x {
+      @include font($size: 1.6rem, $height: normal, $weight: 800);
+    }
+  }
+
+  &__button_width:hover {
+    transition: 0.3s;
+    max-width: 280px;
+    width: 100%;
   }
 
 
@@ -25,6 +66,28 @@
     align-items: center;
     max-width: 694px;
     width: 100%;
+
+    @include media-max-tablet-xs {
+      padding-bottom: 20px;
+    }
+
+    @include media-mobile-s {
+      flex-direction: column;
+      row-gap: 30px;
+    }
+  }
+
+  &__description-image {
+    @include media-tablet-x {
+      max-width: 130px;
+      width: 100%;
+      height: 150px;
+    }
+
+    @include media-mobile-s {
+      width: 100px;
+      height: 120px;
+    }
   }
 
   &__description-wrapper {
@@ -32,18 +95,64 @@
     flex-direction: column;
     row-gap: 58px;
 
+    @include media-mobile-s {
+      text-align: center;
+      row-gap: 30px;
+    }
   }
 
   &__title {
-    font-family: "Raleway",sans-serif;
+    font-family: "Raleway", sans-serif;
     color: $color-black;
 
     @include font($size: 5rem, $height: normal, $weight: 800);
+
+    @include media-tablet-x {
+
+      @include font($size: 4rem, $height: normal, $weight: 800);
+    }
+
+    @include media-mobile-s {
+      @include font($size: 3rem, $height: normal, $weight: 800);
+    }
   }
 
   &__text {
     color: $color-text;
 
     @include font($size: 1.8rem, $height: normal, $weight: 400);
+
+    @include media-tablet-x {
+
+      @include font($size: 1.6rem, $height: normal, $weight: 400);
+    }
+
+    @include media-mobile-s {
+      @include font($size: 1.4rem, $height: normal, $weight: 800);
+    }
+  }
+
+  &__border {
+    display: inline-flex;
+    align-items: center;
+    max-width: 280px;
+    width: 100%;
+    border-right: $color-black 7px solid;
+    min-height: 319px;
+
+    @include media-tablet-x {
+      max-width: 245px;
+    }
+
+    @include media-max-tablet-xs {
+      min-height: 200px;
+      border-right: $color-black 4px solid;
+    }
+
+    @include media-mobile-s {
+      text-align: center;
+      border-right: none;
+      border-bottom: $color-black 4px solid;
+    }
   }
 }

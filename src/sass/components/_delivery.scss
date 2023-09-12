@@ -1,0 +1,68 @@
+.delivery {
+  margin-bottom: 70px;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+    background-color: $color-services;
+  }
+
+
+  &__button {
+    height: 100px;
+    background-color: $color-yellow;
+    padding-inline: 39px;
+
+    @include media-mobile {
+      padding-inline: 20px;
+    }
+
+    @include media-mobile-s {
+      padding-inline: 10px;
+    }
+
+    @include media-mobile-xs {
+      max-width: 45px;
+    }
+  }
+
+  &__text {
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-black;
+
+    @include font($size: 2rem, $height: normal, $weight: 800);
+
+    @include media-mobile {
+
+      @include font($size: 1.4rem, $height: normal, $weight: 800);
+    }
+
+    @include media-mobile-xs {
+      @include font($size: 1.2rem, $height: normal, $weight: 800);
+    }
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    padding-inline: 62px;
+
+    @include media-mobile {
+      padding-inline: 31px;
+    }
+
+    @include media-mobile-s {
+      padding-inline: 10px;
+    }
+
+    @include media-mobile-xs {
+      max-width: 45px;
+    }
+  }
+}
