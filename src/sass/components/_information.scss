@@ -5,16 +5,32 @@
     gap: 108px;
     margin-bottom: 70px;
 
+  @include media-mobile {
+    gap: 70px;
+  }
+
+  @include media-mobile-s {
+    flex-direction: column;
+  }
+
   &__about-us {
     display: flex;
     flex-direction: column;
     row-gap: 40px;
+
+    @include media-mobile-s {
+      align-items: center;
+    }
   }
 
   &__contact {
     display: flex;
     flex-direction: column;
     row-gap: 40px;
+
+    @include media-mobile-s {
+      align-items: center;
+    }
   }
 
   &__advantages {
@@ -27,24 +43,53 @@
   &__heading {
     max-width: 85px;
     width: 100%;
-    border-top: $color-black 4px solid;
+    border-top: $color-black 7px solid;
+
+    @include media-mobile-s {
+      border-top: $color-black 4px solid;
+    }
   }
 
   &__title {
     font-family: "Raleway", sans-serif;
 
     @include font($size: 5rem, $height: normal, $weight: 800);
+
+    @include media-mobile{
+
+      @include font($size: 3rem, $height: normal, $weight: 800);
+    }
+
+    @include media-mobile-s {
+
+      @include font($size: 2.4rem, $height: normal, $weight: 800);
+    }
   }
 
   &__sub-title {
 
     @include font($size: 2.4rem, $height: normal, $weight: 700);
+
+    @include media-mobile {
+
+      @include font($size: 1.8rem, $height: normal, $weight: 700);
+    }
+
+    @include media-mobile-s {
+
+      @include font($size: 1.6rem, $height: normal, $weight: 700);
+    }
   }
 
   &__text {
     color: $color-text;
 
     @include font($size: 1.8rem, $height: normal, $weight: 400);
+
+    @include media-mobile-s {
+
+      @include font($size: 1.6rem, $height: normal, $weight: 400);
+    }
   }
 
   &__phone {
@@ -52,6 +97,15 @@
     text-decoration-line: underline;
 
     @include font($size: 1.8rem, $height: normal, $weight: 400);
+
+    @include media-mobile {
+      @include font($size: 1.6rem, $height: normal, $weight: 400);
+    }
+
+    @include media-mobile-s {
+
+      @include font($size: 1.4rem, $height: normal, $weight: 400);
+    }
   }
 
   &__list {
@@ -59,12 +113,32 @@
     flex-direction: column;
     align-items: flex-start;
     row-gap: 19px;
-
-
   }
 
   &__item {
+    list-style: disc;
+    list-style-position: inside;
+    color: $color-yellow;
 
     @include font($size: 1.8rem, $height: normal, $weight: 700);
+
+    @include media-mobile {
+      @include font($size: 1.6rem, $height: normal, $weight: 700);
+    }
+
+    @include media-mobile-s {
+
+      @include font($size: 1.4rem, $height: normal, $weight: 700);
+    }
+  }
+
+  &__item span {
+    color: $color-black;
+  }
+
+
+  &__button {
+
+    @include font($size: 1.4rem, $height: normal, $weight: 700);
   }
 }

@@ -1207,15 +1207,35 @@ input[type=search]::-webkit-search-results-decoration {
   gap: 108px;
   margin-bottom: 70px;
 }
+@media (max-width: 768px) {
+  .information {
+    gap: 70px;
+  }
+}
+@media (max-width: 640px) {
+  .information {
+    flex-direction: column;
+  }
+}
 .information__about-us {
   display: flex;
   flex-direction: column;
   row-gap: 40px;
 }
+@media (max-width: 640px) {
+  .information__about-us {
+    align-items: center;
+  }
+}
 .information__contact {
   display: flex;
   flex-direction: column;
   row-gap: 40px;
+}
+@media (max-width: 640px) {
+  .information__contact {
+    align-items: center;
+  }
 }
 .information__advantages {
   display: flex;
@@ -1226,7 +1246,12 @@ input[type=search]::-webkit-search-results-decoration {
 .information__heading {
   max-width: 85px;
   width: 100%;
-  border-top: #000 4px solid;
+  border-top: #000 7px solid;
+}
+@media (max-width: 640px) {
+  .information__heading {
+    border-top: #000 4px solid;
+  }
 }
 .information__title {
   font-family: "Raleway", sans-serif;
@@ -1235,11 +1260,43 @@ input[type=search]::-webkit-search-results-decoration {
   font-weight: 800;
   line-height: normal;
 }
+@media (max-width: 768px) {
+  .information__title {
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+}
+@media (max-width: 640px) {
+  .information__title {
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+}
 .information__sub-title {
   font-size: 2.4rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+@media (max-width: 768px) {
+  .information__sub-title {
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+@media (max-width: 640px) {
+  .information__sub-title {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
 }
 .information__text {
   color: #444;
@@ -1247,6 +1304,14 @@ input[type=search]::-webkit-search-results-decoration {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+@media (max-width: 640px) {
+  .information__text {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 }
 .information__phone {
   color: #444;
@@ -1256,6 +1321,22 @@ input[type=search]::-webkit-search-results-decoration {
   font-weight: 400;
   line-height: normal;
 }
+@media (max-width: 768px) {
+  .information__phone {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+@media (max-width: 640px) {
+  .information__phone {
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
 .information__list {
   display: flex;
   flex-direction: column;
@@ -1263,7 +1344,35 @@ input[type=search]::-webkit-search-results-decoration {
   row-gap: 19px;
 }
 .information__item {
+  list-style: disc;
+  list-style-position: inside;
+  color: #FFE17F;
   font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@media (max-width: 768px) {
+  .information__item {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+@media (max-width: 640px) {
+  .information__item {
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+.information__item span {
+  color: #000;
+}
+.information__button {
+  font-size: 1.4rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
