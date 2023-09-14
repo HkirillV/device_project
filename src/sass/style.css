@@ -1378,4 +1378,44 @@ input[type=search]::-webkit-search-results-decoration {
   line-height: normal;
 }
 
+.mailing {
+  min-height: 421px;
+  background-color: #F0F0F0;
+}
+.mailing__heading {
+  display: flex;
+  justify-content: space-between;
+}
+.mailing__title {
+  font-family: "Raleway", sans-serif;
+  color: #000;
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.mailing__text {
+  color: #444;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.mailing__button {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  border: #C4C4C4 4px solid;
+  color: #000;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.mailing__test {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /*# sourceMappingURL=style.css.map */
