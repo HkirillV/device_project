@@ -1,9 +1,9 @@
 .information {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 108px;
-    margin-bottom: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 108px;
+  margin-bottom: 70px;
 
   @include media-mobile {
     gap: 70px;
@@ -38,6 +38,10 @@
     flex-direction: column;
     align-items: flex-start;
     row-gap: 30px;
+
+    @include media-mobile-s {
+      align-items: center;
+    }
   }
 
   &__heading {
@@ -55,7 +59,7 @@
 
     @include font($size: 5rem, $height: normal, $weight: 800);
 
-    @include media-mobile{
+    @include media-mobile {
 
       @include font($size: 3rem, $height: normal, $weight: 800);
     }
@@ -87,6 +91,7 @@
     @include font($size: 1.8rem, $height: normal, $weight: 400);
 
     @include media-mobile-s {
+      text-align: center;
 
       @include font($size: 1.6rem, $height: normal, $weight: 400);
     }
@@ -99,6 +104,7 @@
     @include font($size: 1.8rem, $height: normal, $weight: 400);
 
     @include media-mobile {
+
       @include font($size: 1.6rem, $height: normal, $weight: 400);
     }
 
@@ -113,6 +119,11 @@
     flex-direction: column;
     align-items: flex-start;
     row-gap: 19px;
+
+    @include media-mobile-s {
+      flex-direction: initial;
+      gap: 15px;
+    }
   }
 
   &__item {
