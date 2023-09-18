@@ -149,7 +149,14 @@
 
 
   &__button {
+    font-family: "Raleway",sans-serif;
+    text-transform: uppercase;
 
-    @include font($size: 1.4rem, $height: normal, $weight: 700);
+    @include font($size: 1.8rem, $height: normal, $weight: 800);
+
+    @include media-tablet-x {
+
+      @include font($size: 1.6rem, $height: normal, $weight: 800);
+    }
   }
 }

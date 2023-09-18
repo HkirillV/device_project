@@ -1511,10 +1511,20 @@ input[type=search]::-webkit-search-results-decoration {
   color: #000;
 }
 .information__button {
-  font-size: 1.4rem;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.8rem;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   line-height: normal;
+}
+@media (max-width: 1024px) {
+  .information__button {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
 }
 
 .mailing {
