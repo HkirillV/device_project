@@ -1,6 +1,116 @@
 .footer {
+  display: flex;
     background-color: $color-text;
     min-height: 321px;
 
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include media-mobile {
+      padding-block: 15px;
+      flex-direction: column;
+    }
+  }
+
+  &__wrapper-logo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+
+    @include media-mobile {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      row-gap: 35px;
+    }
+  }
+
+  &__logo {
+    @include media-max-tablet-xs {
+      width: 130px;
+    }
+  }
+
+  &__logo-border {
+    width: 80px;
+    border-bottom: $color-yellow 7px solid;
+
+    @include media-max-tablet-xs {
+      border-bottom: $color-yellow 4px solid;
+    }
+
+    @include media-mobile {
+      width: 130px;
+    }
+  }
+
+  &__address {
+    color: $color-white;
+
+    @include font($size: 1.6rem, $height: normal, $weight: 400);
+
+    @include media-max-tablet-xs {
+
+      @include font($size: 1.4rem, $height: normal, $weight: 400);
+    }
+  }
+
+  &__wrapper-menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+  }
+
+  &__item {
+    font-family: "Raleway", sans-serif;
+    color: $color-white;
+
+    @include font($size: 1.8rem, $height: normal, $weight: 800);
+
+    @include media-max-tablet-xs {
+
+      @include font($size: 1.6rem, $height: normal, $weight: 800);
+    }
+  }
+
+  &__list {
+    display: inline-flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  &__item-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-dimGrey;
+    width: 40px;
+    border-radius: 50%;
+
+    @include media-max-tablet-xs {
+      width: 35px;
+    }
+  }
+
+  &__phone {
+    color: $color-white;
+    text-decoration: underline;
+
+    @include font($size: 1.6rem, $height: normal, $weight: 400);
+
+    @include media-max-tablet-xs {
+
+      @include font($size: 1.4rem, $height: normal, $weight: 400);
+    }
+  }
 
 }

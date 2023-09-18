@@ -5,9 +5,9 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/swiper-bundle.min.css"/>
-  <link rel="stylesheet" href="../src/sass/style.css">
+  <link rel="stylesheet" href="src/css/reset.css">
+  <link rel="stylesheet" href="src/css/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="src/sass/style.css">
   <title>Device | Главная</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
   <div class="header__content container">
     <div class="header__block">
       <a class="header__logo" href="./index.html">
-        <img class="header__logo-icon" src="./img/logo.svg" width="145" height="36" loading="lazy" alt="logo">
+        <img class="header__logo-icon" src="src/img/logo.svg" width="145" height="36" loading="lazy" alt="logo">
       </a>
       <div class="header__navigation">
         <form class="header__search-form hidden-tablet-xs" action="./index.html" method="post">
@@ -207,7 +207,7 @@
       <ul class="advantages__slider-list swiper-wrapper">
         <li class="swiper-slide">
           <div class="popular-product">
-            <img class="popular-product__image" src="./img/advantages/quadrocopter.png" width="560" height="560"
+            <img class="popular-product__image" src="src/img/advantages/quadrocopter.png" width="560" height="560"
                  loading="lazy" alt="quadrocopter">
             <div class="popular-product__info">
               <div class="popular-product__counter">01</div>
@@ -238,7 +238,7 @@
         </li>
         <li class="swiper-slide">
           <div class="popular-product">
-            <img class="popular-product__image" src="./img/advantages/selfie-stick.png" width="560" height="560"
+            <img class="popular-product__image" src="src/img/advantages/selfie-stick.png" width="560" height="560"
                  loading="lazy" alt="selfie-stick">
             <div class="popular-product__info">
               <div class="popular-product__counter">02</div>
@@ -272,7 +272,7 @@
         </li>
         <li class="swiper-slide">
           <div class="popular-product">
-            <img class="popular-product__image" src="./img/advantages/bracelet.png" width="560" height="560"
+            <img class="popular-product__image" src="src/img/advantages/bracelet.png" width="560" height="560"
                  loading="lazy" alt="bracelet">
             <div class="popular-product__info">
               <div class="popular-product__counter">03</div>
@@ -620,28 +620,64 @@
 </section>
 <section class="footer">
   <div class="footer__content container">
-    <div class="footer__logo">
-      <svg width="145" height="36" viewBox="0 0 145 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g id="Group">
-          <g id="Group_2">
-            <path id="Vector" d="M27.2187 0V35.3H19.6135V32.9C17.9123 34.8 15.5107 36 12.1083 36C5.50379 36 0 30.2 0 22.7C0 15.2 5.50379 9.4 12.1083 9.4C15.5107 9.4 18.0124 10.6 19.6135 12.5V0H27.2187ZM19.6135 22.7C19.6135 18.9 17.1118 16.5 13.6094 16.5C10.107 16.5 7.60523 18.9 7.60523 22.7C7.60523 26.5 10.107 28.9 13.6094 28.9C17.1118 28.8 19.6135 26.5 19.6135 22.7Z" fill="#FFC700"/>
-            <path id="Vector_2" d="M43.7302 29.1999C45.8316 29.1999 47.5328 28.3999 48.5335 27.2999L54.6377 30.7999C52.136 34.1999 48.4334 35.9999 43.6301 35.9999C35.0242 35.9999 29.6205 30.1999 29.6205 22.6999C29.6205 15.1999 35.0242 9.3999 43.0297 9.3999C50.4348 9.3999 55.8385 15.0999 55.8385 22.6999C55.8385 23.7999 55.7385 24.7999 55.5383 25.6999H37.626C38.6267 28.2999 40.9283 29.1999 43.7302 29.1999ZM48.3334 20.0999C47.5328 17.1999 45.2312 16.0999 42.9296 16.0999C40.0276 16.0999 38.1263 17.4999 37.4259 20.0999H48.3334Z" fill="#FFC700"/>
-            <path id="Vector_3" d="M82.1564 10.1001L72.85 35.3001H64.2441L54.9377 10.1001H63.3435L68.6471 26.1001L73.9508 10.1001C73.9508 10.1001 82.1564 10.1001 82.1564 10.1001Z" fill="#FFC700"/>
-            <path id="Vector_4" d="M83.4574 10.1001H91.0626V35.3001H83.4574V10.1001Z" fill="#FFC700"/>
-            <path id="Vector_5" d="M93.6646 22.6999C93.6646 15.1999 99.3685 9.3999 107.074 9.3999C111.977 9.3999 116.28 11.9999 118.482 15.8999L111.877 19.6999C110.976 17.8999 109.175 16.8999 106.974 16.8999C103.671 16.8999 101.27 19.2999 101.27 22.6999C101.27 26.1999 103.671 28.4999 106.974 28.4999C109.175 28.4999 111.077 27.3999 111.877 25.6999L118.482 29.4999C116.38 33.3999 112.077 35.9999 107.074 35.9999C99.3685 35.9999 93.6646 30.1999 93.6646 22.6999Z" fill="#FFC700"/>
-            <path id="Vector_6" d="M132.892 29.1999C134.993 29.1999 136.694 28.3999 137.695 27.2999L143.799 30.7999C141.297 34.1999 137.595 35.9999 132.792 35.9999C124.186 35.9999 118.782 30.1999 118.782 22.6999C118.782 15.1999 124.286 9.3999 132.191 9.3999C139.596 9.3999 145 15.0999 145 22.6999C145 23.7999 144.9 24.7999 144.7 25.6999H126.787C127.788 28.2999 130.09 29.1999 132.892 29.1999ZM137.595 20.0999C136.794 17.1999 134.493 16.0999 132.191 16.0999C129.289 16.0999 127.388 17.4999 126.687 20.0999H137.595Z" fill="#FFC700"/>
-          </g>
-          <path id="Vector_7" d="M83.4574 0V10.1L91.0626 0H83.4574Z" fill="#FFC700"/>
-        </g>
-      </svg>
+    <div class="footer__wrapper-logo">
+      <a class="footer__logo" href="./index.html">
+        <img src="src/img/footer/footer-logo.svg" width="145" height="36" loading="lazy" alt="footer-logo">
+      </a>
       <div class="footer__address">
-        <p>Санкт-Петербург, набережная
+        <p>Санкт-Петербург, набережная<br/>
           реки Карповки, 5, литера П.</p>
       </div>
+      <div class="footer__logo-border"></div>
     </div>
+    <div class="footer__wrapper-menu">
+      <div class="footer__menu">
+        <a class="footer__item" href="/">Доставка</a>
+        <a class="footer__item" href="/">Гарантия</a>
+        <a class="footer__item" href="/">Контакты</a>
+      </div>
+      <div class="footer__list">
+        <a class="footer__item-list" href="/">
+          <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_47880_808)">
+              <path d="M12.4431 0.0735832L0.623071 4.63158C-0.183596 4.95558 -0.178929 5.40558 0.475071 5.60625L3.50974 6.55292L10.5311 2.12292C10.8631 1.92092 11.1664 2.02958 10.9171 2.25092L5.2284 7.38492H5.22707L5.2284 7.38558L5.01907 10.5136C5.32574 10.5136 5.46107 10.3729 5.63307 10.2069L7.10707 8.77358L10.1731 11.0382C10.7384 11.3496 11.1444 11.1896 11.2851 10.5149L13.2977 1.02958C13.5037 0.203583 12.9824 -0.170417 12.4431 0.0735832Z"
+                    fill="#444444"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_47880_808">
+                <rect width="14" height="12" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <a class="footer__item-list" href="/">
+          <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="icons" clip-path="url(#clip0_47880_813)">
+              <path id="Vector"
+                    d="M15.6671 1.67464C15.5765 1.35146 15.4 1.05887 15.1564 0.827973C14.9059 0.589975 14.5989 0.41973 14.2644 0.333306C13.0124 0.00330585 7.99641 0.00330593 7.99641 0.00330593C5.9053 -0.0204856 3.8147 0.0841556 1.73641 0.316639C1.40187 0.409448 1.09545 0.583497 0.844411 0.823306C0.597745 1.06064 0.419078 1.35331 0.325745 1.67397C0.10154 2.8818 -0.00739387 4.1082 0.000411455 5.33664C-0.00758854 6.56397 0.101078 7.78997 0.325745 8.99931C0.417078 9.31864 0.595078 9.60997 0.842411 9.84531C1.08974 10.0806 1.39774 10.2506 1.73641 10.3406C3.00508 10.67 7.99641 10.67 7.99641 10.67C10.0902 10.6938 12.1835 10.5892 14.2644 10.3566C14.5989 10.2702 14.9059 10.1 15.1564 9.86197C15.3999 9.63112 15.5762 9.33849 15.6664 9.01531C15.8965 7.80794 16.0083 6.58103 16.0004 5.35197C16.0177 4.11771 15.906 2.88502 15.6671 1.67397V1.67464ZM6.40174 7.61931V3.05464L10.5751 5.33731L6.40174 7.61931Z"
+                    fill="#444444"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_47880_813">
+                <rect width="16" height="11" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <a class="footer__item-list" href="/">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="20" fill="white" fill-opacity="0.3"/>
+            <path d="M22.7 13.1551C24.2 12.6551 25.3 13.4551 25.9 14.2551C26.4 14.0551 27 13.8551 27.6 13.6551C27.6 14.4551 27.1 15.0551 26.8 15.2551C27.5 15.4551 28 14.8551 28 14.8551C27.9 15.7551 27.1 16.5551 26.6 16.7551C26.4 23.0551 23.8 27.1551 17.7 27.0551C17.2 27.0551 17.8 27.0551 17.3 27.0551C17 27.0551 13.6 26.6551 13 25.2551C15 25.4551 16.4 24.8551 17.1 24.1551C16.3 23.8551 14.7 23.7551 14.5 21.3551C14.8 21.5551 15 21.6551 15.6 21.5551C14.5 20.7551 13.3 20.0551 13.4 18.0551C13.7 18.3551 14.3 18.5551 14.6 18.4551C14 18.2551 12.8 15.3551 13.8 13.8551C15.4 15.5551 17.1 17.2551 20.1 17.3551C20.3 15.2551 21.1 13.8551 22.7 13.1551Z"
+                  fill="#444444"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+      <a class="footer__phone" href="tel:+7 (812) 812-12-12">Тел.: +7 (812) 812-12-12</a>
   </div>
 </section>
-<script src="./js/swiper-bundle.min.js"></script>
-<script src="js/main.js"></script>
+<script src="src/js/swiper-bundle.min.js"></script>
+<script src="src/js/main.js"></script>
 </body>
 </html>

@@ -307,8 +307,127 @@ input[type=search]::-webkit-search-results-decoration {
 }
 
 .footer {
+  display: flex;
   background-color: #444;
   min-height: 321px;
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .footer__content {
+    padding-block: 15px;
+    flex-direction: column;
+  }
+}
+.footer__wrapper-logo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+@media (max-width: 768px) {
+  .footer__wrapper-logo {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    row-gap: 35px;
+  }
+}
+@media (max-width: 921px) {
+  .footer__logo {
+    width: 130px;
+  }
+}
+.footer__logo-border {
+  width: 80px;
+  border-bottom: #FFE17F 7px solid;
+}
+@media (max-width: 921px) {
+  .footer__logo-border {
+    border-bottom: #FFE17F 4px solid;
+  }
+}
+@media (max-width: 768px) {
+  .footer__logo-border {
+    width: 130px;
+  }
+}
+.footer__address {
+  color: #FFF;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (max-width: 921px) {
+  .footer__address {
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+.footer__wrapper-menu {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+}
+.footer__menu {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+.footer__item {
+  font-family: "Raleway", sans-serif;
+  color: #FFF;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+@media (max-width: 921px) {
+  .footer__item {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+}
+.footer__list {
+  display: inline-flex;
+  justify-content: center;
+  gap: 15px;
+}
+.footer__item-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #C0C0C0;
+  width: 40px;
+  border-radius: 50%;
+}
+@media (max-width: 921px) {
+  .footer__item-list {
+    width: 35px;
+  }
+}
+.footer__phone {
+  color: #FFF;
+  text-decoration: underline;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (max-width: 921px) {
+  .footer__phone {
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 }
 
 .button {
