@@ -142,11 +142,11 @@
 }
 
 
-  &__login-button,&__compare-button, &__cart-button  {
+  &__login-button,&__compare-button, &__cart-button {
     border: none;
     height: 30px;
 
-    @include font($size: 1.8rem, $height: 3.0rem, $weight: 400)
+    @include font($size: 1.8rem, $height: 3.0rem, $weight: 400);
   }
 
 
