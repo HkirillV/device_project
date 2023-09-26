@@ -34,6 +34,10 @@
     }
   }
 
+  &__logo:hover {
+    opacity: 0.6;
+  }
+
   &__navigation {
     display: flex;
     justify-content: space-between;
@@ -104,6 +108,16 @@
     @include media-tablet-x {
       padding: 0 30px 0 30px;
     }
+
+    &:hover {
+      background-color: $color-black;
+      color: $color-white;
+      opacity: 1;
+    }
+
+    &:focus-visible {
+      border: 2px solid $color-focus;
+    }
   }
 
 
@@ -139,10 +153,10 @@
     align-items: center;
     position: relative;
     gap: 12px;
-}
+  }
 
 
-  &__login-button,&__compare-button, &__cart-button {
+  &__login-button, &__compare-button, &__cart-button {
     border: none;
     height: 30px;
 

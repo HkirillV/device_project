@@ -28,11 +28,21 @@ body {
 }
 
 button:hover {
-  opacity: 0.75;
+  opacity: 0.6;
+}
+
+button:focus-visible {
+  border: 2px solid #AF4FFF;
 }
 
 a {
   color: #444;
+}
+a:hover {
+  opacity: 0.6;
+}
+a:focus-visible {
+  border: 2px solid #AF4FFF;
 }
 
 input[type=text]::-ms-clear {
@@ -132,6 +142,9 @@ input[type=search]::-webkit-search-results-decoration {
     max-width: 120px;
   }
 }
+.header__logo:hover {
+  opacity: 0.6;
+}
 .header__navigation {
   display: flex;
   justify-content: space-between;
@@ -207,6 +220,14 @@ input[type=search]::-webkit-search-results-decoration {
   .header__search-button {
     padding: 0 30px 0 30px;
   }
+}
+.header__search-button:hover {
+  background-color: #000;
+  color: #FFF;
+  opacity: 1;
+}
+.header__search-button:focus-visible {
+  border: 2px solid #AF4FFF;
 }
 .header__login {
   display: flex;

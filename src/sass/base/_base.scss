@@ -8,12 +8,24 @@ body {
 
 
 button:hover {
-  opacity: 0.75;
+  opacity: 0.6;
+}
+
+button:focus-visible {
+  border: 2px solid $color-focus;
 }
 
 
 a {
   color: $color-text;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus-visible {
+    border: 2px solid $color-focus;
+  }
 }
 
 
