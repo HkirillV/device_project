@@ -1,15 +1,16 @@
 .categories {
 
-  &__catalog {
-    display: flex;
-    align-items: flex-start;
+  &__list {
+    display: grid;
     justify-content: center;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(6, 1fr);
     gap: 40px;
   }
 
   &__catalog-image {
     text-align: center;
+    height: 160px;
+    width: 160px;
     margin-bottom: 32px;
     background-color: $color-yellow;
   }

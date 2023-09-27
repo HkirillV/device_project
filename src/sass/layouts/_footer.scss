@@ -29,6 +29,11 @@
   }
 
   &__logo {
+
+    &:hover {
+      opacity: 0.6;
+    }
+
     @include media-max-tablet-xs {
       width: 130px;
     }
@@ -76,6 +81,15 @@
 
     @include font($size: 1.8rem, $height: normal, $weight: 800);
 
+    &:hover {
+      color: $color-yellow;
+      border-bottom: 2px solid $color-yellow;
+    }
+
+    &:focus-visible {
+      border: 2px solid $color-focus;
+    }
+
     @include media-max-tablet-xs {
 
       @include font($size: 1.6rem, $height: normal, $weight: 800);
@@ -96,6 +110,14 @@
     width: 40px;
     border-radius: 50%;
 
+    &:hover {
+      background-color: $color-yellow;
+    }
+
+    &:focus-visible {
+      border: 2px solid $color-focus;
+    }
+
     @include media-max-tablet-xs {
       width: 35px;
     }
@@ -106,6 +128,15 @@
     text-decoration: underline;
 
     @include font($size: 1.6rem, $height: normal, $weight: 400);
+
+    &:hover {
+      color: $color-yellow;
+      border-bottom: 2px solid $color-yellow;
+    }
+
+    &:focus-visible {
+      border: 2px solid $color-focus;
+    }
 
     @include media-max-tablet-xs {
 

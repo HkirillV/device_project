@@ -91,6 +91,11 @@
   }
 
   &__button {
+    
+    &:focus-visible {
+      border: 2px solid $color-focus;
+    }
+
     &:not(:last-child) {
       margin-bottom: 60px;
 
