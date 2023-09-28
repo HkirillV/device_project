@@ -12,15 +12,6 @@
     flex-direction: column;
   }
 
-  &__about-us {
-    display: flex;
-    flex-direction: column;
-    row-gap: 40px;
-
-    @include media-mobile-s {
-      align-items: center;
-    }
-  }
 
   &__contact {
     display: flex;

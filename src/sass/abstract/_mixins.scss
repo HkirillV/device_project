@@ -5,6 +5,9 @@
   line-height: $height;
 }
 
+@mixin media-tablet-catalog {
+  @media (max-width: $tablet-catalog) { @content; }
+}
 
 @mixin media-tablet-button--next {
   @media (max-width: $tablet-button--next) { @content; }

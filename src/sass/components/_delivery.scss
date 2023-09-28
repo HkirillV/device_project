@@ -29,11 +29,13 @@
   }
 
   &__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
     font-family: "Raleway", sans-serif;
     min-height: 100px;
     width: 100%;
-    text-align: center;
-    text-transform: uppercase;
     color: $color-black;
 
     @include font($size: 2rem, $height: normal, $weight: 800);

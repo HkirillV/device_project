@@ -3,14 +3,23 @@
   &__list {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 40px;
+    grid-template-columns: repeat(6, 160px);
+    column-gap: 40px;
+
+   @include media-tablet-catalog {
+     grid-template-columns: repeat(3, 160px);
+     gap: 100px;
+   }
+
+    @include media-mobile {
+      grid-template-columns: repeat(2, 140px);
+      gap: 50px;
+    }
   }
 
-  &__catalog-image {
+  &__icon-wrapper {
     text-align: center;
     height: 160px;
-    width: 160px;
     margin-bottom: 32px;
     background-color: $color-yellow;
   }
