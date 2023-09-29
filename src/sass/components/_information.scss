@@ -46,42 +46,15 @@
 
   &__title {
     font-family: "Raleway", sans-serif;
-
-    @include font($size: 5rem, $height: normal, $weight: 800);
-
-    @include media-mobile {
-
-      @include font($size: 3rem, $height: normal, $weight: 800);
-    }
-
-    @include media-mobile-s {
-
-      @include font($size: 2.4rem, $height: normal, $weight: 800);
-    }
-  }
-
-  &__sub-title {
-
-    @include font($size: 2.4rem, $height: normal, $weight: 700);
-
-    @include media-mobile {
-
-      @include font($size: 1.8rem, $height: normal, $weight: 700);
-    }
-
-    @include media-mobile-s {
-
-      @include font($size: 1.6rem, $height: normal, $weight: 700);
-    }
   }
 
   &__text {
+    text-align: center;
     color: $color-text;
 
     @include font($size: 1.8rem, $height: normal, $weight: 400);
 
-    @include media-mobile-s {
-      text-align: center;
+    @include media-mobile {
 
       @include font($size: 1.6rem, $height: normal, $weight: 400);
     }
@@ -96,11 +69,6 @@
     @include media-mobile {
 
       @include font($size: 1.6rem, $height: normal, $weight: 400);
-    }
-
-    @include media-mobile-s {
-
-      @include font($size: 1.4rem, $height: normal, $weight: 400);
     }
   }
 
@@ -125,11 +93,6 @@
 
     @include media-mobile {
       @include font($size: 1.6rem, $height: normal, $weight: 700);
-    }
-
-    @include media-mobile-s {
-
-      @include font($size: 1.4rem, $height: normal, $weight: 700);
     }
   }
 

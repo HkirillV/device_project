@@ -83,3 +83,38 @@ input[type="search"]::-webkit-search-results-decoration {
     display: none !important;
   }
 }
+
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: '...', sans-serif;
+}
+
+h1, .h1 {
+  font-size: 5rem;
+  line-height: 1.5;
+}
+
+h2, .h2 {
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 1.2;
+
+  @include media-mobile-s {
+    @include font($size: 3rem, $height: normal, $weight: 800);
+  }
+
+  @include media-mobile-xs {
+    @include font($size: 2.4rem, $height: normal, $weight: 800);
+  }
+}
+
+h3, .h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.35;
+}
