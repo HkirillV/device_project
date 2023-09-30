@@ -10,6 +10,7 @@
     align-items: center;
 
     @include media-mobile {
+      row-gap: 15px;
       padding-block: 15px;
       flex-direction: column;
     }
@@ -93,33 +94,6 @@
     @include media-max-tablet-xs {
 
       @include font($size: 1.6rem, $height: normal, $weight: 800);
-    }
-  }
-
-  &__list {
-    display: inline-flex;
-    justify-content: center;
-    gap: 15px;
-  }
-
-  &__item-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $color-dimGrey;
-    width: 40px;
-    border-radius: 50%;
-
-    &:hover {
-      background-color: $color-yellow;
-    }
-
-    &:focus-visible {
-      border: 2px solid $color-focus;
-    }
-
-    @include media-max-tablet-xs {
-      width: 35px;
     }
   }
 

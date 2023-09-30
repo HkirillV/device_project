@@ -26,21 +26,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 25px;
 
     @include media-mobile-s {
       flex-direction: column;
       row-gap: 20px;
-      padding-bottom: 25px;
     }
   }
 
   &__form {
     display: flex;
-  }
-
-  &__title {
-    font-family: "Raleway", sans-serif;
-    color: $color-black;
   }
 
   &__email {
@@ -55,25 +50,18 @@
 
     @include font($size: 1.8rem, $height: normal, $weight: 400);
 
-    @include media-tablet-x {
-      width: 450px;
-
-      @include font($size: 1.6rem, $height: normal, $weight: 400);
-    }
 
     @include media-max-tablet-xs {
       width: 350px;
 
+      @include font($size: 1.6rem, $height: normal, $weight: 400);
+
     }
 
     @include media-mobile {
-      width: 250px;
+      width: 220px;
 
       @include font($size: 1.4rem, $height: normal, $weight: 400);
-    }
-
-    @include media-mobile-xs {
-      width: 200px;
     }
   }
 
@@ -84,16 +72,12 @@
   }
 
   &__text {
-    display: flex;
-    align-items: center;
-    text-align: center;
-
     color: $color-text;
 
     @include font($size: 1.8rem, $height: normal, $weight: 400);
 
-    @include media-mobile {
-
+    @include media-max-tablet-xs {
+      text-align: center;
       @include font($size: 1.6rem, $height: normal, $weight: 400);
     }
   }
@@ -119,23 +103,18 @@
     }
 
     @include media-tablet-x {
+      height: 35px;
+      padding-inline: 25px;
 
       @include font($size: 1.6rem, $height: normal, $weight: 800);
     }
 
-    @include media-max-tablet-xs {
-      height: 35px;
-      padding-inline: 25px;
-    }
 
     @include media-mobile {
-
-      @include font($size: 1.4rem, $height: normal, $weight: 800);
-    }
-
-    @include media-mobile-xs {
       height: 25px;
       padding-inline: 10px;
+
+      @include font($size: 1.4rem, $height: normal, $weight: 800);
     }
   }
 }

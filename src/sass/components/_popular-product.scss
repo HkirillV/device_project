@@ -22,10 +22,6 @@
     @include media-max-tablet-xs {
       max-width: 350px;
     }
-
-    @include media-mobile {
-      max-width: 300px;
-    }
   }
 
   &__counter {
@@ -41,7 +37,6 @@
   }
 
   &__title {
-    font-family: "Raleway",sans-serif;
     margin-top: -65px;
     color: $color-black;
 

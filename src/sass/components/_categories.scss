@@ -29,5 +29,10 @@
     color: $color-black;
 
     @include font($size: 1.8rem, $height: 2.4rem, $weight: 800);
+
+    @include media-mobile-xs {
+
+      @include font($size: 1.6rem, $height: 2.4rem, $weight: 800);
+    }
   }
 }

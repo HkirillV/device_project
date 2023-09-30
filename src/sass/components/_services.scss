@@ -99,22 +99,6 @@
     }
   }
 
-  &__title {
-    font-family: "Raleway", sans-serif;
-    color: $color-black;
-
-    @include font($size: 5rem, $height: normal, $weight: 800);
-
-    @include media-tablet-x {
-
-      @include font($size: 4rem, $height: normal, $weight: 800);
-    }
-
-    @include media-mobile-s {
-      @include font($size: 3rem, $height: normal, $weight: 800);
-    }
-  }
-
   &__text {
     color: $color-text;
 
@@ -137,10 +121,6 @@
     width: 100%;
     border-right: $color-black 7px solid;
     min-height: 319px;
-
-    @include media-tablet-x {
-      max-width: 245px;
-    }
 
     @include media-max-tablet-xs {
       min-height: 200px;

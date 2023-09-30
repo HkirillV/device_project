@@ -1,0 +1,31 @@
+.socials {
+  display: flex;
+  justify-content: center;
+
+  &__list {
+    display: inline-flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-dimGrey;
+    width: 40px;
+    border-radius: 50%;
+
+    &:hover {
+      background-color: $color-yellow;
+    }
+
+    &:focus-visible {
+      border: 2px solid $color-focus;
+    }
+
+    @include media-max-tablet-xs {
+      width: 35px;
+    }
+  }
+}
