@@ -20,3 +20,6 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.advantages__slider-button--prev',
     },
 });
+
+//Floating
+

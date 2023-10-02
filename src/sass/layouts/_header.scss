@@ -7,6 +7,7 @@
   &__content {
     display: flex;
     justify-content: center;
+    position: relative;
     background: linear-gradient(to bottom, transparent 20px, $color-yellow 20px);
 
     @include media-mobile-xs {
