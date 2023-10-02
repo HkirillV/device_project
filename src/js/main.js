@@ -23,3 +23,12 @@ const swiper = new Swiper('.swiper', {
 
 //Floating
 
+const floatingButtonElement = document.querySelector('.header__catalog-button');
+const floatingMenuElement = document.querySelector('.floating');
+
+
+floatingButtonElement.addEventListener('click', () => {
+    floatingButtonElement.classList.toggle('is-active')
+    floatingMenuElement.classList.toggle('is-active')
+})
+
