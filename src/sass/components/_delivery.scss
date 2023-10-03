@@ -15,6 +15,10 @@
     background-color: $color-yellow;
     padding-inline: 39px;
 
+    &:hover {
+      background-color: $color-logo;
+    }
+
     @include media-mobile {
       padding-inline: 10px;
     }

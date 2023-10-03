@@ -22,6 +22,10 @@
     height: 160px;
     margin-bottom: 32px;
     background-color: $color-yellow;
+
+    &:hover {
+      background-color: $color-logo;
+    }
   }
 
   &__catalog-text {
